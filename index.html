@@ -4,166 +4,191 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TERRATECH FARMERS Website</title>
+    <title>Urban Oasis - Hydroponic Vegetables</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/7a4b62b0a4.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Navigation -->
     <nav>
-      <div class="navigation container">
-        <div class="logo_container">
-          <img src="images/logo.png" alt="logo" width="200" height="100"/>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Urban Oasis Logo" />
         </div>
-        <div class="bar_icon">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+        <div class="hamburger">
           <i class="fas fa-bars"></i>
         </div>
       </div>
     </nav>
-    <!-- Hero Section -->
-    <div class="container">
-      <div class="hero">
-        <div class="hero_image">
-          <img src="images/hero_image.png" alt="hero image"  width="400" height="400" />
-        </div>
-        <div class="hero_content">
-          <div class="tag">25% Off on All Products</div>
-          <h2>A complete destination for Fresh and handpicked organic vegetables</h2>
-          <h3>TECHNOLOGY WE USE</h3>
-          <p>
-            <u>Hydroponic</u> is the new approach of switching farming from soil to water. 
-            While it uses 20% less space and 20 times less water than soil-based gardening. 
-            It is organic farming to boost your health in all aspects. 
-            It is free of pesticides and all types of chemical toxins.
-            This horticulture farming can grow indoors without any worries of temperature and climate control.
-            It reduces soil-borne diseases and improves the basic functional unit of your body. 
-            To improve your immune system organic products are necessary and hydroponics is all about organic to grow your health standard. 
-          </p>
-          <button class="explore_btn">Explore more</button>
-        </div>
-      </div>
-      <section class="features">
-        <div class="feature">
-          <img src="icons/discount.png" alt="" />
-          <div class="feature_content">
-            <h3>DISCOUNT VOUCHER</h3>
-            Get best discount using vouchers
-          </div>
-        </div>
-        <div class="feature">
-          <img src="icons/fresh.png" alt="" />
-          <div class="feature_content">
-            <h3>FRESH HEALTHY VEGETABLES & FRUITS</h3>
-            Get you favorite items
-          </div>
-        </div>
-        <div class="feature">
-          <img src="icons/delivery.png" alt="" />
-          <div class="feature_content">
-            <h3>FAST HOME DILVERY</h3>
-            Oredr to get your favorites items at your doorstep
-          </div>
-        </div>
-      </section>
-      <div class="divider"></div>
-      <div class="menu">
-        <div class="tag">OUR MENU</div>
-        <h2>EXPLORE OUR MENU</h2>
 
-        <div class="grid">
-          <div class="item1">
-            <img
-              class="grid-image"
-              src="images/grid_image1.png"
-              alt="image 1"
-            />
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Welcome to Urban Oasis</h1>
+          <p>Fresh, Organic, and Hydroponically Grown Vegetables</p>
+          <a href="#products" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <h2>How Hydroponic Farming Works</h2>
+        <p>
+          Hydroponics is a soilless farming technique where plants grow in a
+          nutrient-rich water solution. This method ensures optimal growth by
+          directly delivering essential nutrients to the plant roots.
+        </p>
+        <div class="how-grid">
+          <div class="how-card">
+            <i class="fas fa-seedling"></i>
+            <h3>Seed Germination</h3>
+            <p>
+              Seeds are placed in growing mediums like Rockwool or coconut coir
+              to begin the sprouting process.
+            </p>
           </div>
-          <div class="item2">
-            <img
-              class="grid-image"
-              src="images/grid_image2.png"
-              alt="image 2"
-            />
+          <div class="how-card">
+            <i class="fas fa-water"></i>
+            <h3>Nutrient Solution</h3>
+            <p>
+              Plants are submerged in a water-based solution enriched with
+              essential minerals such as nitrogen, phosphorus, and potassium.
+            </p>
           </div>
-          <div class="item3">
-            <img
-              class="grid-image"
-              src="images/grid_image3.png"
-              alt="image 3"
-            />
+          <div class="how-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Light and Growth</h3>
+            <p>
+              LED grow lights or natural sunlight provide the necessary light
+              spectrum for photosynthesis and plant development.
+            </p>
           </div>
-          <div class="item4">
-            <img
-              class="grid-image"
-              src="images/grid_image4.png"
-              alt="image 4"
-            />
+          <div class="how-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Harvesting</h3>
+            <p>
+              After a rapid growth cycle, plants are harvested fresh and
+              pesticide-free, ready for consumption.
+            </p>
           </div>
-          <div class="item5">
-            <img
-              class="grid-image"
-              src="images/grid_image5.png"
-              alt="image 5"
-            />
+        </div>
+        <div class="how-video">
+          <h3>Watch Hydroponics in Action</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_R3jZ4YGBGA"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/tomato.png" alt="Tomato" />
+            <h3>Tomato</h3>
+            <p>$3.99/kg</p>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
-          <div class="item6">
-            <img
-              class="grid-image"
-              src="images/grid_image6.png"
-              alt="image 6"
-            />
+          <div class="product-card">
+            <img src="images/lettuce.png" alt="Lettuce" />
+            <h3>Lettuce</h3>
+            <p>$2.99/kg</p>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
-          <div class="item7">
-            <img
-              class="grid-image"
-              src="images/grid_image7.png"
-              alt="image 7"
-            />
+          <div class="product-card">
+            <img src="images/cucumber.png" alt="Cucumber" />
+            <h3>Cucumber</h3>
+            <p>$4.99/kg</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/spinach.png" alt="Spinach" />
+            <h3>Spinach</h3>
+            <p>$3.49/kg</p>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
         </div>
       </div>
-    </div>
-    <footer>
-      <div class="footer_container container">
-        <div class="footer_logo">
-          <img src="images/logo.png" alt="logo" width="200" height="100"/>
-        </div>
-        <div class="link_lists">
-          <h3>Main Links</h3>
-          <ul>
-            <li>Order Tracking</li>
-            <li>New Order</li>
-            <li>Contact Us</li>
-            <li>News about us</li>
-          </ul>
-        </div>
-        <div class="link_lists">
-          <h3>Support</h3>
-          <ul>
-            <li>About Us</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditons</li>
-          </ul>
-        </div>
-        <div class="news_letter">
-          <h3>Support</h3>
-          <input type="email" placeholder="Enter your Email..." />
-          <h3>Follow Us</h3>
-          <div class="icon_container">
-            <div class="icon">
-              <i class="fa fa-facebook"></i>
-            </div>
-            <div class="icon">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </div>
-            <div class="icon">
-              <i class="fa fa-youtube" aria-hidden="true"></i>
-            </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+      <div class="container">
+        <h2>Benefits of Hydroponic Vegetables</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Pesticide-Free</h3>
+            <p>Grown without harmful chemicals, ensuring healthier produce.</p>
           </div>
+          <div class="benefit-card">
+            <i class="fas fa-tint"></i>
+            <h3>Water-Efficient</h3>
+            <p>Uses 90% less water compared to traditional farming.</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-seedling"></i>
+            <h3>Year-Round Growth</h3>
+            <p>Grow vegetables indoors, regardless of the season.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Urban Oasis. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
