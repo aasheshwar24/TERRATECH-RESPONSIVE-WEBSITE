@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urban Oasis - Hydroponic Vegetables</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Link to the login-specific CSS -->
+    <link rel="stylesheet" href="login.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -28,6 +30,8 @@
           <li><a href="#products">Products</a></li>
           <li><a href="#benefits">Benefits</a></li>
           <li><a href="#contact">Contact</a></li>
+          <!-- Add a Login Link -->
+          <li><a href="#" id="login-link">Login</a></li>
         </ul>
         <div class="cart">
           <i class="fas fa-shopping-cart"></i>
@@ -38,6 +42,26 @@
         </div>
       </div>
     </nav>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="login-modal">
+      <div class="login-container">
+        <div class="login-form">
+          <span class="close-modal">&times;</span>
+          <h2>Login</h2>
+          <form onsubmit="loginUser(event)">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" placeholder="Password" required />
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+          </form>
+          <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -114,25 +138,25 @@
           <div class="product-card">
             <img src="images/tomato.png" alt="Tomato" />
             <h3>Tomato</h3>
-            <p>$3.99/kg</p>
+            <p>Rs-23/kg</p>
             <button class="add-to-cart">Add to Cart</button>
           </div>
           <div class="product-card">
             <img src="images/lettuce.png" alt="Lettuce" />
             <h3>Lettuce</h3>
-            <p>$2.99/kg</p>
+            <p>Rs-55/kg</p>
             <button class="add-to-cart">Add to Cart</button>
           </div>
           <div class="product-card">
             <img src="images/cucumber.png" alt="Cucumber" />
             <h3>Cucumber</h3>
-            <p>$4.99/kg</p>
+            <p>Rs-50/kg</p>
             <button class="add-to-cart">Add to Cart</button>
           </div>
           <div class="product-card">
             <img src="images/spinach.png" alt="Spinach" />
             <h3>Spinach</h3>
-            <p>$3.49/kg</p>
+            <p>Rs-30/kg</p>
             <button class="add-to-cart">Add to Cart</button>
           </div>
         </div>
