@@ -19,50 +19,72 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav>
-      <div class="container">
-        <div class="logo">
-          <img src="images/logo.png" alt="Urban Oasis Logo" />
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <!-- Add a Login Link -->
-          <li><a href="#" id="login-link">Login</a></li>
-        </ul>
-        <div class="cart">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart-count">0</span>
-        </div>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </nav>
+<nav>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.png" alt="Urban Oasis Logo" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- Add Login and Sign Up Links -->
+      <li><a href="#" id="login-link">Login</a></li>
+      <li><a href="#" id="signup-link">Sign Up</a></li>
+    </ul>
+    <div class="cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </div>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
 
     <!-- Login Modal -->
-    <div id="login-modal" class="login-modal">
-      <div class="login-container">
-        <div class="login-form">
-          <span class="close-modal">&times;</span>
-          <h2>Login</h2>
-          <form onsubmit="loginUser(event)">
-            <div class="form-group">
-              <input type="email" id="email" placeholder="Email" required />
-            </div>
-            <div class="form-group">
-              <input type="password" id="password" placeholder="Password" required />
-            </div>
-            <button type="submit" class="login-btn">Login</button>
-          </form>
-          <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a></p>
-        </div>
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <input type="email" id="login-email" placeholder="Email" required />
       </div>
-    </div>
+      <div class="form-group">
+        <input type="password" id="login-password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <p class="signup-link">Don't have an account? <a href="#" id="switch-to-signup">Sign up here</a></p>
+  </div>
+</div>
 
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <div class="form-group">
+        <input type="text" id="signup-name" placeholder="Full Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="signup-email" placeholder="Email" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="signup-password" placeholder="Password" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required />
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <p class="login-link">Already have an account? <a href="#" id="switch-to-login">Login here</a></p>
+  </div>
+</div>
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="container">
@@ -160,6 +182,7 @@
             <button class="add-to-cart">Add to Cart</button>
           </div>
         </div>
+        <a href="#all-products" class="btn">See More Products</a>
       </div>
     </section>
 
@@ -184,6 +207,7 @@
             <p>Grow vegetables indoors, regardless of the season.</p>
           </div>
         </div>
+        <a href="#benefits-more" class="btn">Know More About Benefits</a>
       </div>
     </section>
 
