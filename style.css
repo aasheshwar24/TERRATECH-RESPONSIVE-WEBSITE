@@ -488,3 +488,292 @@ footer .social-links a:hover {
   text-decoration: underline;
 }
 
+.testimonials {
+  background: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #2e8b57;
+  margin-bottom: 40px;
+}
+.testimonial-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.testimonial-card {
+  background: #f0fff0;
+  padding: 20px;
+  border-left: 5px solid #2e8b57;
+  border-radius: 8px;
+  font-style: italic;
+}
+.testimonial-card h4 {
+  margin-top: 15px;
+  color: #2e8b57;
+}
+
+.faq {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+.faq h2 {
+  text-align: center;
+  color: #2e8b57;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.faq-item {
+  background: white;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.faq-item h4 {
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+.blog {
+  padding: 80px 0;
+  background: white;
+}
+.blog h2 {
+  text-align: center;
+  color: #2e8b57;
+  margin-bottom: 40px;
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.blog-post {
+  background: #f0fff0;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.blog-post:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.blog-post h3 {
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+.blog-post a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.subscribe {
+  background: #2e8b57;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+.subscribe h2 {
+  margin-bottom: 20px;
+}
+#subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#subscribe-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+#subscribe-form button {
+  background: #ffd700;
+  color: #333;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #4caf50;
+}
+
+.stars {
+  color: #f5b50a;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-card {
+    width: 90%;
+  }
+}
+
+/* Tools Section Styling */
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tool-card {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+}
+
+.tool-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.tool-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2e8b57;
+}
+
+.tool-card p {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tool-card .btn {
+  background: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tool-card .btn:hover {
+  background: #1d6e45;
+}
+
+.tools h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2e8b57;
+  margin-bottom: 20px;
+}
+
+.training {
+  padding: 80px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.training h2 {
+  font-size: 2.5rem;
+  color: #2e8b57;
+  margin-bottom: 20px;
+}
+
+.training p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.training-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.training-card {
+  background: #f0fff0;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.training-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.training-card h3 {
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+.training-card p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.training-card .btn {
+  background: #2e8b57;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.training-card .btn:hover {
+  background: #247a4a;
+}
